@@ -502,7 +502,7 @@ button {
         padding: 10px;
     }
 
-    .sidebar ul {
+    .sidebar .sidebar-tabs {
         display: none;
     }
 
@@ -514,7 +514,7 @@ button {
         display: block;
     }
 
-    .sidebar.open ul {
+    .sidebar.open .sidebar-tabs {
         display: block;
         transform: translateX(0);
     }
