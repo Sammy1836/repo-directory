@@ -202,6 +202,8 @@ button {
     z-index: 100;
     transition: all 0.3s ease-in-out;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
@@ -229,13 +231,17 @@ button {
     font-weight: 200;
 }
 
-.sidebar ul {
+.sidebar .sidebar-tabs {
     list-style: none;
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-.sidebar ul li {
+.sidebar .sidebar-tabs li {
     padding: 0.2rem 0;
     margin: 0.2rem;
     display: flex;

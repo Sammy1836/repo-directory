@@ -66,83 +66,87 @@ const Sidebar = () => {
                     )}
                 </div>
 
-                <ul>
-                    <li>
-                        <NavLink
-                            to="/home/repositories"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <AiOutlineHome />
-                            Repositories
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/home/codeReview"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <FaCode />
-                            AI Code Review
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/home/cloudSecurity"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <CiCloudOn />
-                            Cloud Security
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/home/howToUse"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <LiaBookSolid />
-                            How to Use
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/home/settings"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <BsGear /> Settings
-                        </NavLink>
-                    </li>
-                    <li style={{ alignItems: "end" }}>
-                        <NavLink
-                            to="/home/support"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <FiPhone />
-                            Support
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? "link activeLink" : "link"
-                            }
-                        >
-                            <FiLogOut />
-                            Logout
-                        </NavLink>
-                    </li>
+                <ul className="sidebar-tabs">
+                    <div className="sidebar-top">
+                        <li>
+                            <NavLink
+                                to="/home/repositories"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <AiOutlineHome />
+                                Repositories
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/home/codeReview"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <FaCode />
+                                AI Code Review
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/home/cloudSecurity"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <CiCloudOn />
+                                Cloud Security
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/home/howToUse"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <LiaBookSolid />
+                                How to Use
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/home/settings"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <BsGear /> Settings
+                            </NavLink>
+                        </li>
+                    </div>
+                    <div className="sidebar-bottom">
+                        <li style={{ alignItems: "end" }}>
+                            <NavLink
+                                to="/home/support"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <FiPhone />
+                                Support
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? "link activeLink" : "link"
+                                }
+                            >
+                                <FiLogOut />
+                                Logout
+                            </NavLink>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </>
